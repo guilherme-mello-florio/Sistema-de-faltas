@@ -1,0 +1,32 @@
+header{
+  background-color: green;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.escola{
+    color: white;
+    position: static;
+
+}
+
+.menu{
+    color: white;
+    background-color: green;
+    border: green;
+    margin-right: 40%px;
+
+}
+.select{
+    flex-direction: column;
+}
+
+.select1{
+
+}
+
+.select2{
+
+    
+}
