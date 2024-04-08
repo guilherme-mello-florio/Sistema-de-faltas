@@ -1,60 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
     <head>
         <meta charset="utf-8">
         <title>Anatomia do Documento</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Kadwa:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-
-
     <body>
+
+        <!-- página inicial de faltas -->
         <header>
-            <button class="menu">=</button>
-            <h1 class="escola">Escola Octógono</h1><div> 
-            <div> </div>
+            <button style="width: 6%; background: none; border: none; outline: none; box-shadow: none;">
+                <img src="Imagens/menu.png" style=" width: 60px; height: 60px;">
+            </button>
+            <div style="width: 25%; display: flex; justify-content: space-around; align-items: center;">
+                <img src="Imagens/octogono.png" style="width: 60px; height: 60px;">
+                <p style="font-size: 30px; color: white; font-family: Inknut Antiqua;">Escola Octógono</p>
+            </div>
+            <div style="width: 7%;"></div>
         </header>
+        <section id="pag_inicial"></section>
+        <footer></footer>
 
-        <div class="select">
+        <!-- página gerar relatório -->
+        <section id="background_relatorio">
+            <section id="pag_relatorio">
+                <header>
 
-<div class="select1">
-    <select name="professor" id="professor">
-        <option value="" disabled selected hidden>Professor</option>
-        <option value="luis">Luis</option>
-    </select>   
+                </header>
+                <section id="corpo_relatorio">
 
-    <select name="disciplina" id="disciplina">
-        <option value="" disabled selected hidden>Disciplina</option>
-        <option value="">Tópicos de Banco de Dados</option>
-    </select>   
+                </section>
+            </section>
+        </section>
 
-    <div class="select">
-    <select name="dia" id="dia">
-        <option value="" disabled selected hidden>Dia</option>
-        <option value="">13/03/2024</option>
-    </select>   
+        <!-- nav -->
 
-    <select name="turma" id="turma">
-        <option value="" disabled selected hidden>Turma</option>
-        <option value="">05H</option>
-    </select>   
-</div>
-</div>
-
-
-    <div>
-    <button disabled>-</button>
-    <button disabled>-</button>
-    <button disabled>-</button>
-    <button disabled>-</button>
-    <button disabled>-</button>
-    <button disabled>-</button>
-    <button disabled>-</button>
-    <button disabled>-</button>
-    </div> 
-    
-
-
-
-</body>
-</html> 
+        <!-- página ajustar fonte -->
+    </body>
+</html>
