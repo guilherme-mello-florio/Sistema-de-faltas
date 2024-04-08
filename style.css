@@ -1,32 +1,51 @@
-header{
-  background-color: green;
-  display: flex;
-  justify-content: space-between;
-  
-}
-
-.escola{
-    color: white;
-    position: static;
-
-}
-
-.menu{
-    color: white;
-    background-color: green;
-    border: green;
-    margin-right: 40%px;
-
-}
-.select{
+body{
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    overflow: hidden;
 }
 
-.select1{
-
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw; height: 10vh;
+    background-color: #59BB5D;
 }
 
-.select2{
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: #59BB5D;
+}
 
-    
+#pag_inicial{
+    width: 100vw;
+    height: 80vh;
+    background-color: #E9E9E9;
+}
+
+#background_relatorio{
+    /*display: none;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #00000080;
+}
+
+#pag_relatorio{
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#corpo_relatorio{
+    width: 100vw;
+    height: 80vh;
+    background-color: #E9E9E9;
 }
