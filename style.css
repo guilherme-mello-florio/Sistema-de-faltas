@@ -4,18 +4,15 @@ body{
     justify-content: space-between;
     background-color: black;
     overflow: hidden;
+    margin-left: 0px;
+    margin-top: 0px;
 }
 
-header{
+#header_pag_inicial{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100vw; height: 10vh;
-    background-color: #59BB5D;
-}
-
-footer{
-    width: 100vw;
-    height: 10vh;
     background-color: #59BB5D;
 }
 
@@ -25,14 +22,24 @@ footer{
     background-color: #E9E9E9;
 }
 
-#background_relatorio{
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: #59BB5D;
+}
+
+/* estilo da pagina relatorio */
+
+#background_pag_relatorio{
     /*display: none;*/
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     background-color: #00000080;
 }
 
@@ -44,8 +51,106 @@ footer{
     justify-content: space-between;
 }
 
-#corpo_relatorio{
-    width: 100vw;
+#header_pag_relatorio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw; height: 10vh;
+    background-color: #59BB5D;
+}
+
+#corpo_pag_relatorio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
     height: 80vh;
     background-color: #E9E9E9;
+}
+
+#filtros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: 1px solid black;
+    width: 25vw;
+    height: 80vh;
+}
+
+#campo_busca_aluno{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    border-bottom: 3px solid black;
+    width: 20vw;
+    height: 5vh;
+}
+
+#aluno_buscado{
+    width: 15vw;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 16px;
+    font-family: Kadwa;
+}
+
+#separacao_filtro{
+    width: 25vw;
+    height: 10vh;
+    background-color: #59BB5D;
+}
+
+#campo_filtros_gerais{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 25vw;
+    height: 45vh;
+}
+
+.filtro_geral{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25vw;
+    height: 10vh;
+}
+
+.filtro_checkbox{
+    width: 3vw;
+    height: 3vh;
+}
+
+select {
+    width: 20vw;
+    padding: 16px 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+  }
+
+#botao_gerar_relatorio{
+    width: 20vw;
+    height: 8vh;
+    border-radius: 40px;
+    background-color: #59BB5D;
+    color: white;
+    font-family: Kadwa;
+    font-size: 28px;
+}
+
+#background_relatorio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65vw;
+    height: 80vh;
+}
+
+#relatorio{
+
 }
