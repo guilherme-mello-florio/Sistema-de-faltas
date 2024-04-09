@@ -15,7 +15,7 @@
     <body>
 
         <!-- página inicial de faltas -->
-        <header>
+        <header id="header_pag_inicial">
             <button style="width: 6%; background: none; border: none; outline: none; box-shadow: none;">
                 <img src="Imagens/menu.png" style=" width: 60px; height: 60px;">
             </button>
@@ -29,13 +29,54 @@
         <footer></footer>
 
         <!-- página gerar relatório -->
-        <section id="background_relatorio">
+        <section id="background_pag_relatorio">
             <section id="pag_relatorio">
-                <header>
-
+                <header id="header_pag_relatorio">
+                    <img src="Imagens/octogono.png" style="width: 60px; height: 60px; margin-left: 1%;">
+                    <p style="font-size: 30px; color: white; font-family: Inknut Antiqua;">Relatórios de faltas</p>
+                    <button style="width: 6%; background: none; border: none; outline: none; box-shadow: none;">
+                        <img src="Imagens/x.png" style="width: 30px; height: 30px;">
+                    </button>
                 </header>
-                <section id="corpo_relatorio">
+                <section id="corpo_pag_relatorio">
+                    <div id="filtros">
+                        <div id="campo_busca_aluno">
+                            <form>
+                                <input id="aluno_buscado" placeholder="Pesquisar aluno">
+                                <input type="submit" value="" style="background: none; border: none; outline: none; box-shadow: none;">
+                                    <img src="Imagens/lupa.png" style="width: 25px; height: 25px;">
+                                </input>
+                        </form>
+                        </div>
+                        <div id="separacao_filtro"></div>
+                        <div id="campo_filtros_gerais">
+                            <form>
+                                <div class="filtro_geral">
+                                    <input class="filtro_checkbox" type="checkbox" id="Filtro_Professor" name="Filtro_Professor" value="filtro_professor_on">
+                                    <select>
+                                        <option value="luis">Luís</option>
+                                        <option value="einstein">Albert Einstein</option>
+                                    </select>
+                                    
+                                </div>
+                                <div class="filtro_geral">
 
+                                </div>
+                                <div class="filtro_geral">
+
+                                </div>
+                                <div class="filtro_geral">
+
+                                </div>
+                                <input type="submit" value="Gerar relatório" id="botao_gerar_relatorio"></input>
+                            </form>
+                        </div>
+                    </div>
+                    <section id="background_relatorio">
+                        <section id="relatorio">
+                            
+                        </section>
+                    </section>
                 </section>
             </section>
         </section>
