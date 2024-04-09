@@ -1,3 +1,5 @@
+/* estilo do body */
+
 body{
     display: flex;
     flex-direction: column;
@@ -7,6 +9,8 @@ body{
     margin-left: 0px;
     margin-top: 0px;
 }
+
+/* estilo da pagina inicial */
 
 #header_pag_inicial{
     display: flex;
@@ -22,17 +26,63 @@ body{
     background-color: #E9E9E9;
 }
 
-footer{
+#footer_pag_inicial{
     width: 100vw;
     height: 10vh;
     background-color: #59BB5D;
 }
 
+/* estilo do nav */
+
+#background_nav{
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #00000080;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #59BB5D;
+    width: 25vw;
+    height: 100vh;
+}
+
+#menu_opcoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 25vw;
+    height: 25vh;
+    background-color: white;
+}
+
+.botaoNav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25vw;
+    height: 10vh;
+    background-color: purple;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
 /* estilo da pagina relatorio */
 
 #background_pag_relatorio{
-    /*display: none;*/
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -71,20 +121,28 @@ footer{
 #filtros{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     border-right: 1px solid black;
     width: 25vw;
     height: 80vh;
 }
 
+#form_busca_aluno{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #campo_busca_aluno{
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
     border-bottom: 3px solid black;
     width: 20vw;
     height: 5vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
 }
 
 #aluno_buscado{
@@ -95,6 +153,18 @@ footer{
     box-shadow: none;
     font-size: 16px;
     font-family: Kadwa;
+}
+
+#submit_buscar_aluno{
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-image: url(Imagens/lupa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
 }
 
 #separacao_filtro{
@@ -109,16 +179,20 @@ footer{
     justify-content: space-between;
     align-items: center;
     width: 25vw;
-    height: 45vh;
+    height: 56vh;
 }
 
 .filtro_geral{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 25vw;
+    width: 22vw;
     height: 10vh;
 }
+
+select:required:invalid {
+    color: gray;
+  }
 
 .filtro_checkbox{
     width: 3vw;
@@ -129,7 +203,7 @@ select {
     width: 20vw;
     padding: 16px 16px;
     border: 1px solid black;
-    border-radius: 4px;
+    border-radius: 10px;
     background-color: white;
   }
 
@@ -146,11 +220,69 @@ select {
 #background_relatorio{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 65vw;
     height: 80vh;
+    overflow-y: scroll;
 }
 
 #relatorio{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 55vw;
+    height:100vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: white;
+}
 
+/* estilo da pagina de ajustes */
+#background_pag_ajustes{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #00000080;
+}
+
+#pag_ajustes{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #E9E9E9;
+    box-shadow: 20px 20px 30px #00000080;
+}
+
+#header_pag_ajustes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50vw;
+    height: 10vh;
+    background-color: #59BB5D;
+}
+
+#corpo_pag_ajustes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 25vh;
+}
+
+#footer_pag_ajustes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 15vh;
+    background-color: #59BB5D;
 }
